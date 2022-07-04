@@ -1,0 +1,7 @@
+﻿입출력SW 사용법 2019.10.31 
+
+1. .../.../IOSW_BIN/Release/IOSW.exe 를 실행.
+2. .../.../IOSW_BIN/Release/IOSWGUI.exe 를 실행.
+3. ID, Password 입력 후 로그인.
+4. ID, Passwodd 정보는 .../.../IOSW_BIN/Release/GUIConfiguration.ini 에서 설정 할 수 있음. (현재 ID/PW :  f-15kuser/f-15kuser)
+5. 입출력SW를 실행하기 위해서는 항상 .../.../IOSW_BIN/Release 폴더의 모든 파일 필요.
