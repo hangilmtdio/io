@@ -116,9 +116,8 @@ typedef struct Host_To_Cockpit_Data_Type
 	int						COCK2HOST_SIZE;
 	int						INST_TIMETAG;
 	MTD_MODE_TYPE			MTD_MODE;
-
-	//HOST_TO_COCKPIT_TYPE   HOST2IO;
 	F_16_COCKPIT_TO_HOST_TYPE	HOST2IO;
+	
 
 } Host_To_Cockpit_Data_Type;
 

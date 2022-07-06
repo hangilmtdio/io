@@ -1,5 +1,5 @@
 #pragma once
-typedef enum UP_CDENTER_DOWN_TYPE
+typedef enum UP_CENTER_DOWN_TYPE
 {
 	UP_CDENTER_DOWN_TYPE_CDENTER,
 	UP_CDENTER_DOWN_TYPE_DOWN,
@@ -849,7 +849,7 @@ typedef enum OFF_CPD_TYPE
 {
 	OFF_CPD_TYPE_OFF,
 	OFF_CPD_TYPE_CPD
-};
+}OFF_CPD_TYPE;
 
 typedef enum OFF_MAP_TYPE
 {

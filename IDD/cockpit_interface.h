@@ -4,6 +4,7 @@
 
 #pragma pack(push, 1)
 // 2022.06.22
+
 typedef struct F16_CMFD_BUTTON_TYPE
 {
 	ON_OFF_TYPE	mfd_btn_1;
@@ -26,71 +27,67 @@ typedef struct F16_CMFD_BUTTON_TYPE
 	ON_OFF_TYPE	mfd_btn_18;
 	ON_OFF_TYPE	mfd_btn_19;
 	ON_OFF_TYPE	mfd_btn_20;
-	UP_CDENTER_DOWN_TYPE	mfd_gain_up_btn;
-	UP_CDENTER_DOWN_TYPE	mfd_brt_up_btn;
-	UP_CDENTER_DOWN_TYPE	mfd_sys_up_btn;
-	UP_CDENTER_DOWN_TYPE	mfd_com_up_btn;
+	UP_CENTER_DOWN_TYPE	mfd_gain_up_btn;
+	UP_CENTER_DOWN_TYPE	mfd_brt_up_btn;
+	UP_CENTER_DOWN_TYPE	mfd_sys_up_btn;
+	UP_CENTER_DOWN_TYPE	mfd_com_up_btn;
 }F16_CMFD_BUTTON_TYPE;
 
 typedef struct F16_ICP_BUTTON_TYPE
 {
-	ON_OFF_TYPE	icp_com_1_btn;
-	ON_OFF_TYPE	icp_com_2_btn;
-	ON_OFF_TYPE	icp_iff_btn;
-	ON_OFF_TYPE	icp_list_btn;
-	ON_OFF_TYPE	icp_a_a_btn;
-	ON_OFF_TYPE	icp_a_g_btn;
-	ON_OFF_TYPE	icp_t_ils_1_btn;
-	ON_OFF_TYPE	icp_alow_2_n_btn;
-	ON_OFF_TYPE	icp_num_3_btn;
-	ON_OFF_TYPE	icp_stpt_4_w_btn;
-	ON_OFF_TYPE	icp_crus_5_btn;
-	ON_OFF_TYPE	icp_time_6_e_btn;
-	ON_OFF_TYPE	icp_mark_7_btn;
-	ON_OFF_TYPE	icp_fix_8_s_btn;
-	ON_OFF_TYPE	icp_a_cal_9_btn;
-	ON_OFF_TYPE	icp_m_sel_0_btn;
-	ON_OFF_TYPE	icp_rcl_btn;
-	ON_OFF_TYPE	icp_entr_btn;
-	UP_CDENTER_DOWN_TYPE	icp_cursor_updown_btn;
-	RTN_UP_DOWN_SEQ_NOT_PRESS_TYPE	icp_joy_btn;
-	DRIFT_NORM_WARN_RESET_TYPE	icp_dnw_switch;
-	ON_OFF_TYPE	icp_flir_wx_btn;
-	DOWN_UP_NOT_PRESS_TYPE	icp_flir_cursor_updown_btn;
-	GAIN_LVL_AUTO_TYPE	icp_flir_gla_switch;
-	int	icp_sym_val;
-	int	icp_brt_val;
-	int	icp_ret_depr_val;
-	int	icp_cont_val;
+	ON_OFF_TYPE icp_com_1_btn;
+	ON_OFF_TYPE icp_com_2_btn;
+	ON_OFF_TYPE icp_iff_btn;
+	ON_OFF_TYPE icp_list_btn;
+	ON_OFF_TYPE icp_a_a_btn;
+	ON_OFF_TYPE icp_a_g_btn;
+	ON_OFF_TYPE icp_t_ils_1_btn;
+	ON_OFF_TYPE icp_alow_2_n_btn;
+	ON_OFF_TYPE icp_num_3_btn;
+	ON_OFF_TYPE icp_stpt_4_w_btn;
+	ON_OFF_TYPE icp_crus_5_btn;
+	ON_OFF_TYPE icp_time_6_e_btn;
+	ON_OFF_TYPE icp_mark_7_btn;
+	ON_OFF_TYPE icp_fix_8_s_btn;
+	ON_OFF_TYPE icp_a_cal_9_btn;
+	ON_OFF_TYPE icp_m_sel_0_btn;
+	ON_OFF_TYPE icp_rcl_btn;
+	ON_OFF_TYPE icp_entr_btn;
+	UP_CDENTER_DOWN_TYPE icp_cursor_updown_btn;
+	RTN_UP_DOWN_SEQ_NOT_PRESS_TYPE icp_joy_btn;
+	DRIFT_NORM_WARN_RESET_TYPE icp_dnw_switch;
+	ON_OFF_TYPE icp_flir_wx_btn;
+	UP_CDENTER_DOWN_TYPE icp_flir_cursor_updown_btn;
+	GAIN_LVL_AUTO_TYPE icp_flir_gla_switch;
+	int icp_sym_val;
+	int icp_brt_val;
+	int icp_ret_depr_val;
 }F16_ICP_BUTTON_TYPE;
 
 typedef struct F16_THREAT_WARNING_PANEL
 {
-	GAIN_LVL_AUTO_TYPE icp_flir_gla_switch;
-	ON_OFF_TYPE	warn_handoff_btn;
-	ON_OFF_TYPE	warn_launch_btn;
-	ON_OFF_TYPE	warn_mode_btn;
-	ON_OFF_TYPE	warn_on_unknown_btn;
-	ON_OFF_TYPE	warn_on_sys_test_btn;
-	ON_OFF_TYPE	warn_tgt_sept_btn;
-	int	warn_handoff_light_val;
-	int	warn_launch_light_val;
-	int	warn_mode_open_light_val;
-	int	warn_on_unknown_light_val;
-	int	warn_on_sys_test_light_val;
-	int	warn_tgt_sept_light_val;
+	ON_OFF_TYPE warn_handoff_btn;
+	ON_OFF_TYPE warn_launch_btn;
+	ON_OFF_TYPE warn_mode_btn;
+	ON_OFF_TYPE warn_on_unknown_btn;
+	ON_OFF_TYPE warn_on_sys_test_btn;
+	ON_OFF_TYPE warn_tgt_sept_btn;
+	int warn_handoff_light_val;
+	int warn_launch_light_val;
+	int warn_mode_open_light_val;
+	int warn_on_unknown_light_val;
+	int warn_on_sys_test_light_val;
+	int warn_tgt_sept_light_val;
 	int warn_handoff_h_light_val;
 	int warn_mode_priority_light_val;
 	int warn_u_unknown_light_val;
 	int warn_sys_test_light_val;
 	int warn_tgt_sept1_light_val;
 	int warn_tgt_sept2_light_val;
-
 	ON_OFF_TYPE icp_sym_roll_off_switch;
 	ON_OFF_TYPE icp_brt_roll_off_switch;
 	ON_OFF_TYPE icp_ret_depr_roll_off_switch;
 	ON_OFF_TYPE icp_cont_roll_off_switch;
-
 }F16_THREAT_WARNING_PANEL;
 
 
@@ -113,23 +110,22 @@ typedef struct F16_IFF_IDENT_F_ACK_BUTTON
 
 typedef struct F16_MISC
 {
-	NORM_QUIET_SELENT_TYPE	misc_rf_switch;
+	NORM_QUIET_SELENT_TYPE misc_rf_switch;
 	OFF_ARM_TYPE misc_laser_switch;
-	ON_OFF_TYPE	misc_alt_rel_btn;
-	ARM_OFF_SIMULATE_TYPE	misc_master_switch;
-	HDG_SEL_ATT_HOLD_STRG_SEL_TYPE	misc_roll_switch;
-	ALT_HOLD_AP_OFF_ATT_HOLD_TYPE	misc_pitch_switch;
-	ON_OFF_TYPE	misc_ecm_light;
-	ON_OFF_TYPE	misc_pitch_solenoid;
-	int	misc_adv_active_light_val;
-	int	misc_adv_stby_light_val;
-	int	misc_backlight_val;
+	ON_OFF_TYPE misc_alt_rel_btn;
+	ARM_OFF_SIMULATE_TYPE misc_master_switch;
+	HDG_SEL_ATT_HOLD_STRG_SEL_TYPE misc_roll_switch;
+	ALT_HOLD_AP_OFF_ATT_HOLD_TYPE misc_pitch_switch;
+	ON_OFF_TYPE misc_ecm_light;
+	ON_OFF_TYPE misc_pitch_solenoid;
+	int misc_adv_active_light_val;
+	int misc_adv_stby_light_val;
+	int misc_backlight_val;
 	ON_OFF_TYPE misc_adv_mode_btn;
 	int nws_brt_val_1;
 	int nws_brt_val_2;
 	int nws_brt_val_3;
 	int nws_brt_val_4;
-
 }F16_MISC;
 
 typedef struct F16_AR_STATUS_NWS_INDICATOR
@@ -142,14 +138,14 @@ typedef struct F16_AR_STATUS_NWS_INDICATOR
 
 typedef struct F16_WARING_LIGHTS
 {
-	int	warn_eng_fire_light_val;
-	int	warn_engine_light_val;
-	int	warn_hyd_oil_press_light_val;
-	int	warn_flcs_light_val;
-	int	warn_dbu_on_light_val;
-	int	warn_to_ldg_config_light_val;
-	int	warn_canopy_light_val;
-	int	warn_blank_light_val;
+	int warn_eng_fire_light_val;
+	int warn_engine_light_val;
+	int warn_hyd_oil_press_light_val;
+	int warn_flcs_light_val;
+	int warn_dbu_on_light_val;
+	int warn_to_ldg_config_light_val;
+	int warn_canopy_light_val;
+	int warn_blank_light_val;
 }F16_WARING_LIGHTS;
 
 
@@ -172,15 +168,13 @@ typedef struct F16_WARING_LIGHTS
 
 typedef struct F16_AOA_INDEXER
 {
-	int	aoa_brt_val;
-	int	aoa_red_light_val;
-	int	aoa_green_light_val;
-	int	aoa_orange_light_val;
-	int	aoa_brt_val_1;
-	int	aoa_brt_val_2;
+	int aoa_red_light_val;
+	int aoa_green_light_val;
+	int aoa_orange_light_val;
+	int aoa_brt_val_1;
+	int aoa_brt_val_2;
 	int aoa_brt_val_3;
 	int aoa_brt_val_4;
-
 }F16_AOA_INDEXER;
 
 
@@ -220,7 +214,7 @@ typedef struct F16_FTIT_INDICATOR
 //패널 삭제
 //typedef struct F16_MRK_BCN_LIGHT
 //{
-//	ON_OFF_TYPE	mrk_bcn_light;
+//	on_off_type	mrk_bcn_light;
 //
 //}F16_MRK_BCN_LIGHT;
 
@@ -259,17 +253,16 @@ typedef struct F16_FUEL_FLOW_INDICATOR
 	int	fuel_flow_indicator;
 }F16_FUEL_FLOW_INDICATOR;
 
-typedef struct F16_RWR {
+typedef struct F16_RWR 
+{
 	int rwr_int_switch_val;
 	int rwr_left_right_val;
 	int rwr_up_down_val;
-
 }F16_RWR;
 
 typedef struct F16_STANDBY_ATTITUDE_INDICATOR {
 	ON_OFF_TYPE sai_pull_switch;
 	int sai_pull_to_cage_knob;
-
 }F16_STANDBY_ATTITUDE_INDICATOR;
 
 
@@ -281,16 +274,16 @@ typedef struct F16_CPD {
 	ON_OFF_TYPE cpd_left_btn_4;
 	ON_OFF_TYPE cpd_left_btn_5;
 	ON_OFF_TYPE cpd_left_btn_6;
-	ON_OFF_TYPE cpd_left_btn_7;
+	UP_CENTER_DOWN_TYPE cpd_left_btn_7;
 	ON_OFF_TYPE cpd_left_btn_8;
-	ON_OFF_TYPE cpd_sym_btn;
+	UP_CENTER_DOWN_TYPE cpd_sym_btn;
 	ON_OFF_TYPE cpd_right_btn_1;
 	ON_OFF_TYPE cpd_right_btn_2;
 	ON_OFF_TYPE cpd_right_btn_3;
 	ON_OFF_TYPE cpd_right_btn_4;
 	ON_OFF_TYPE cpd_right_btn_5;
 	ON_OFF_TYPE cpd_right_btn_6;
-	ON_OFF_TYPE cpd_right_btn_7;
+	UP_CENTER_DOWN_TYPE cpd_right_btn_7;
 	ON_OFF_TYPE cpd_right_btn_8;
 	ON_OFF_TYPE cpd_top_btn_1;
 	ON_OFF_TYPE cpd_top_btn_2;
@@ -307,7 +300,6 @@ typedef struct F16_CPD {
 	int cpd_display_2[4];
 	int cpd_display_3[8];
 	int cpd_display_4[4];
-
 }F16_CPD;
 
 typedef struct CENTER_CONSOLE_TYPE
@@ -333,9 +325,9 @@ typedef struct CENTER_CONSOLE_TYPE
 	F16_FTIT_INDICATOR	ftit_indicator;
 	//F16_MRK_BCN_LIGHT	mrk_bcn_light; 패널 삭제
 	F16_RUDDER_PEDALS	rudder_pedals;
-	F16_AIRSPEED_MACH_INDICATOR	airspeed_mach_indicator;
-	F16_ATTIDUDE_DIRECTOR_INDICATOR	attidude_director_indicator;
-	F16_ALTIMETER	altimeter;
+	//F16_AIRSPEED_MACH_INDICATOR	airspeed_mach_indicator;
+	//F16_ATTIDUDE_DIRECTOR_INDICATOR	attidude_director_indicator;
+	//F16_ALTIMETER	altimeter;
 	F16_DATA_ENTRY_DISPLAY	data_entry_display;
 	F16_FUEL_FLOW_INDICATOR	fuel_flow_indicator;
 }CENTER_CONSOLE_TYPE;
@@ -344,60 +336,60 @@ typedef struct CENTER_CONSOLE_TYPE
 
 typedef struct F16_LANDING_GEAR_CONTROL_PANEL
 {
-	ON_OFF_TYPE	lg_emer_store_btn;
-	DOWN_UP_TYPE	lg_hook_switch;
-	OFF_ENABLE_TYPE	lg_gnd_jet_switch;
-	CHAN_1_CHAN_2_TYPE	lg_brake_switch;
-	OFF_ON_ANTI_SKID_TYPE	lg_park_break_switch;
-	CAT_1_CAT_2_TYPE	lg_store_conf_switch;
-	ON_OFF_TYPE	lg_horn_silencer_btn;
-	OFF_LANDING_TAXI_TYPE	lg_landing_light_switch;
-	ON_OFF_TYPE	lg_dn_lock_btn;
-	ON_OFF_TYPE	lg_park_break_solenoid;
-	ON_OFF_TYPE	lg_wheel_front_light;
-	ON_OFF_TYPE	lg_wheel_left_light;
-	ON_OFF_TYPE	lg_wheel_right_light;
-	DOWN_UP_TYPE	lg_handle_switch;
-	int	lg_backlight_val;
+	ON_OFF_TYPE lg_emer_store_btn;
+	DOWN_UP_TYPE lg_hook_switch;
+	OFF_ENABLE_TYPE lg_gnd_jet_switch;
+	CHAN_1_CHAN_2_TYPE lg_brake_switch;
+	OFF_ON_ANTI_SKID_TYPE lg_park_break_switch;
+	CAT_1_CAT_2_TYPE lg_store_conf_switch;
+	ON_OFF_TYPE lg_horn_silencer_btn;
+	OFF_LANDING_TAXI_TYPE lg_landing_light_switch;
+	ON_OFF_TYPE lg_dn_lock_btn;
+	ON_OFF_TYPE lg_park_break_solenoid;
+	ON_OFF_TYPE lg_wheel_front_light;
+	ON_OFF_TYPE lg_wheel_left_light;
+	ON_OFF_TYPE lg_wheel_right_light;
+	//DOWN_UP_TYPE lg_handle_switch; 스위치 삭제 -
+	int lg_backlight_val;
 }F16_LANDING_GEAR_CONTROL_PANEL;
 
 
 typedef struct F16_CMDS_CONTROL_PANEL
 {
-	OFF_ENABLE_TYPE	cmds_rwr_switch;
-	OFF_ENABLE_TYPE	cmds_jmr_switch;
-	OFF_ENABLE_TYPE	cmds_mws_switch;
-	OFF_ENABLE_TYPE	cmds_01_switch;
-	OFF_ENABLE_TYPE	cmds_02_switch;
-	OFF_ENABLE_TYPE	cmds_ch_switch;
-	OFF_ENABLE_TYPE	cmds_fl_switch;
-	OFF_ENABLE_TYPE	cmds_jett_switch;
-	BIT_1_2_3_4_TYPE	cmds_prgm_switch;
-	OFF_STBY_MAN_SEMI_AUTO_BYP_TYPE	cmds_mode_switch;
-	int	cmds_status_lcd_1_str;
-	int	cmds_status_lcd_2_str;
-	int	cmds_status_lcd_3_str;
-	int	cmds_status_lcd_4_str;
-	int	cmds_status_lcd_5_str;
-	int	cmds_status_lcd_6_str;
-	int	cmds_status_lcd_7_str;
-	int	cmds_status_lcd_8_str;
-	int	cmds_backlight_val;
+	OFF_ENABLE_TYPE cmds_rwr_switch;
+	OFF_ENABLE_TYPE cmds_jmr_switch;
+	OFF_ENABLE_TYPE cmds_mws_switch;
+	OFF_ENABLE_TYPE cmds_01_switch;
+	OFF_ENABLE_TYPE cmds_02_switch;
+	OFF_ENABLE_TYPE cmds_ch_switch;
+	OFF_ENABLE_TYPE cmds_fl_switch;
+	OFF_ENABLE_TYPE cmds_jett_switch;
+	BIT_1_2_3_4_TYPE cmds_prgm_switch;
+	OFF_STBY_MAN_SEMI_AUTO_BYP_TYPE cmds_mode_switch;
+	int cmds_status_lcd_1_str;
+	int cmds_status_lcd_2_str;
+	int cmds_status_lcd_3_str;
+	int cmds_status_lcd_4_str;
+	//public int cmds_status_lcd_5_str;
+	//public int cmds_status_lcd_6_str;
+	//public int cmds_status_lcd_7_str;
+	//public int cmds_status_lcd_8_str;
+	int cmds_backlight_val;
 }F16_CMDS_CONTROL_PANEL;
 
 typedef struct F16_THREAT_WARNING_AUX_CONTROL_PANEL
 {
-	ON_OFF_TYPE	tw_search_btn;
-	ON_OFF_TYPE	tw_act_pwr_btn;
-	ON_OFF_TYPE	tw_low_alt_btn;
-	ON_OFF_TYPE	tw_sys_pwr_btn;
-	int	tw_dim_val;
-	int	tw_search_light;
-	int	tw_act_pwr_light;
-	int	tw_low_alt_light;
-	int	tw_sys_pwr_light;
-	OFF_ENABLE_TYPE	tw_3_amp_fuse;
-	int	tw_backlight_val;
+	ON_OFF_TYPE tw_search_btn;
+	ON_OFF_TYPE tw_act_pwr_btn;
+	ON_OFF_TYPE tw_low_alt_btn;
+	ON_OFF_TYPE tw_sys_pwr_btn;
+	int tw_dim_val;
+	int tw_search_light;
+	int tw_pwr_light;
+	int tw_low_alt_light;
+	int tw_sys_pwr_light;
+	// public OFF_ENABLE_TYPE tw_3_amp_fuse;// 삭제
+	// public int tw_backlight_val; //삭제
 }F16_THREAT_WARNING_AUX_CONTROL_PANEL;
 
 
@@ -424,52 +416,52 @@ typedef struct LEFT_AUX_CONSOLE_TYPE
 
 typedef struct F16_UHF_BACKUP_CONTROL_PANEL
 {
-	ON_OFF_TYPE	uhf_test_dsp_btn;
-	ON_OFF_TYPE	uhf_status_btn;
-	int	uhf_channel_switch;
-	A_3_2_TYPE	uhf_freq_switch_1;
-	int	uhf_freq_switch_2;
-	int	uhf_freq_switch_3;
-	int	uhf_freq_switch_4;
-	NUM_0_25_50_75_TYPE	uhf_freq_switch_5;
-	OFF_MAIN_BOTH_ADF_TYPE	uhf_func_switch;
-	T_TONE_TYPE	uhf_tone_switch;
-	ON_OFF_TYPE	uhf_squelch_switch;
-	MNL_PRESET_GRD_TYPE	uhf_mode_switch;
-	ON_OFF_TYPE	uhf_hid_load_btn;
-	ON_OFF_TYPE	uhf_hid_sq_switch;
-	ON_OFF_TYPE	uhf_hid_zero_switch;
-	int	uhf_hid_gd_sq_val;
-	int	uhf_vol_val;
-	int	uhf_channel_display_str;
-	int	uhf_freq_disp_1_str;
-	int	uhf_freq_disp_2_str;
-	int	uhf_freq_disp_3_str;
-	int	uhf_freq_disp_4_str;
-	int	uhf_freq_disp_5_str;
-	int	uhf_backlight_val;
+	ON_OFF_TYPE uhf_test_dsp_btn;
+	ON_OFF_TYPE uhf_status_btn;
+	int uhf_channel_switch;
+	A_3_2_TYPE uhf_freq_switch_1;
+	int uhf_freq_switch_2;
+	int uhf_freq_switch_3;
+	int uhf_freq_switch_4;
+	NUM_0_25_50_75_TYPE uhf_freq_switch_5;
+	OFF_MAIN_BOTH_ADF_TYPE uhf_func_switch;
+	T_TONE_TYPE uhf_tone_switch;
+	ON_OFF_TYPE uhf_squelch_switch;
+	MNL_PRESET_GRD_TYPE uhf_mode_switch;
+
+
+	int uhf_hid_gd_sq_val;
+	int uhf_vol_val;
+	int uhf_channel_display_str;
+	int uhf_freq_disp_1_str;
+	int uhf_freq_disp_2_str;
+	int uhf_freq_disp_3_str;
+	int uhf_freq_disp_4_str;
+	int uhf_freq_disp_5_str;
+	int uhf_backlight_val;
 	ON_OFF_TYPE uhf_hid_press_btn;
 	int uhf_hid_bw_val;
 	int uhf_hid_mn_sq_val;
+
 
 }F16_UHF_BACKUP_CONTROL_PANEL;
 
 typedef struct F16_AUDIO_1_CONTROL_PENEL
 {
-	int	aud_1_comm_1_val;
-	int	aud_1_comm_2_val;
-	ON_OFF_TYPE	aud_1_comm_1_mode_btn;
-	ON_OFF_TYPE	aud_1_comm_2_mode_btn;
-	OFF_SQL_GD_TYPE	aud_1_comm_1_mode_switch;
-	OFF_SQL_GD_TYPE	aud_1_comm_2_mode_switch;
+	int aud_1_comm_1_val;
+	int aud_1_comm_2_val;
+	ON_OFF_TYPE aud_1_comm_1_mode_btn;
+	ON_OFF_TYPE aud_1_comm_2_mode_btn;
+	OFF_SQL_GD_TYPE aud_1_comm_1_mode_switch;
+	OFF_SQL_GD_TYPE aud_1_comm_2_mode_switch;
 	ON_OFF_TYPE aud_1_comm_1_push_tone_btn;
 	ON_OFF_TYPE aud_1_comm_2_push_tone_btn;
+	int aud_1_secure_voice_val;
+	int aud_1_msl_val;
+	int aud_1_tf_val;
+	int aud_1_threat_val;
+	int aud_1_backlight_val;
 
-	int	aud_1_secure_voice_val;
-	int	aud_1_msl_val;
-	int	aud_1_tf_val;
-	int	aud_1_threat_val;
-	int	aud_1_backlight_val;
 }F16_AUDIO_1_CONTROL_PENEL;
 
 //패널 삭제
@@ -480,8 +472,8 @@ typedef struct F16_AUDIO_1_CONTROL_PENEL
 //	OFF_NORM_TYPE	aspj_rcv_switch;
 //	MAN_AUTO_TYPE	aspj_chaff_switch;
 //	MAN_AUTO_TYPE	aspj_flare_switch;
-//	ON_OFF_TYPE	aspj_test_btn_1;
-//	ON_OFF_TYPE	aspj_test_btn_2;
+//	on_off_type	aspj_test_btn_1;
+//	on_off_type	aspj_test_btn_2;
 //	int	aspj_xmit_light_val;
 //	int	aspj_rcv_light_val;
 //	int	aspj_hot_light_val;
@@ -494,23 +486,23 @@ typedef struct F16_AUDIO_1_CONTROL_PENEL
 
 typedef struct F16_ELEC_CONTROL_PANEL
 {
-	OFF_MAIN_PWR_BATT_TYPE	elec_main_pwr_switch;
-	ON_OFF_TYPE	elec_caution_btn;
-	int	elec_flcs_pmg_light;
-	int	elec_main_gen_light;
-	int	elec_stby_gen_light;
-	int	elec_blank_light;
-	int	elec_epu_gen_light;
-	int	elec_epu_pmg_light;
-	int	elec_to_flcs_light;
-	int	elec_flcs_rly_light;
-	int	elec_fail_light;
-	int	elec_backlight_val;
+	OFF_MAIN_PWR_BATT_TYPE elec_main_pwr_switch;
+	ON_OFF_TYPE elec_caution_btn;
+	int elec_flcs_pmg_light;
+	int elec_main_gen_light;
+	int elec_stby_gen_light;
+	int elec_blank_light;
+	int elec_epu_gen_light;
+	int elec_epu_pmg_light;
+	int elec_to_flcs_light;
+	int elec_flcs_rly_light;
+	int elec_fail_light;
+	int elec_backlight_val;
 }F16_ELEC_CONTROL_PANEL;
 
 typedef struct F16_DVR_CONRTOL_PANEL
 {
-	//ON_OFF_TYPE	avrt_test_btn;
+	//on_off_type	avrt_test_btn;
 	//OFF_ON_AUTO_TYPE	avtr_avrt_switch;
 	//AFT_LEFT_HUD_RIGHT_TYPE	avrt_display_switch;
 	//int	avrt_ctvs_light;
@@ -532,9 +524,9 @@ typedef struct F16_FUEL_CONTROL_PANEL
 
 typedef struct F16_IFF_PANEL
 {
-	OFF_SYBY_LOW_NORM_EMER_TYPE	aux_master_switch;
-	ZERO_A_B_HOLD_TYPE	aux_m_4_code_switch;
-	BACK_UP_UFC_TYPE	aux_cni_switch;
+	OFF_SYBY_LOW_NORM_EMER_TYPE aux_master_switch;
+	ZERO_A_B_HOLD_TYPE aux_m_4_code_switch;
+	BACK_UP_UFC_TYPE aux_cni_switch;
 	M3_OFF_M1_TYPE aux_enable_switch;
 	B_A_OUT_TYPE aux_reply_switch;
 	AUDIO_OUT_TYPE aux_monitor_switch;
@@ -542,35 +534,35 @@ typedef struct F16_IFF_PANEL
 	UP_DOWN_TYPE aux_channel_2_switch;
 	UP_DOWN_TYPE aux_channel_3_switch;
 	UP_DOWN_TYPE aux_channel_4_switch;
-	int	aux_backlight_val;
+	int aux_backlight_val;
 }F16_AUX_COMM_PANEL;
 
 
 typedef struct F16_EXT_LIGHTING_CONROL_PANEL
 {
 	//OFF_1_2_3_4_A_B_C_TYPE	ext_anti_collision_switch;
-	FLASH_STEADY_TYPE	ext_position_light_switch;
-	OFF_BRT_DIM_TYPE	ext_wing_trail_switch;
-	OFF_BRT_DIM_TYPE	ext_fuselage_switch;
-	int	ext_form_val;
-	//	OFF_ALL_A_C_FORM_NORM_TYPE	ext_master_switch;
-	int	ext_refueling_val;
-	int	ext_backlight_val;
+	FLASH_STEADY_TYPE ext_position_light_switch;
+	OFF_BRT_DIM_TYPE ext_wing_trail_switch;
+	OFF_BRT_DIM_TYPE ext_fuselage_switch;
+	int ext_form_val;
+	//public 	OFF_ALL_A_C_FORM_NORM_TYPE	ext_master_switch;
+	int ext_refueling_val;
+	int ext_backlight_val;
 }F16_EXT_LIGHTING_CONROL_PANEL;
 
 
 typedef struct F16_FLT_CONTROL_PANEL
 {
-	OFF_BACKUP_TYPE	flt_digital_switch;
-	EXTEND_NORM_TYPE	flt_alt_falps_switch;
-	DISABLE_ENABLE_TYPE	flt_tf_flyup_switch;
-	LOCK_AUTO_TYPE	flt_le_flaps_switch;
-	OFF_RESET_TYPE	flt_flcs_switch;
-	OFF_BIT_TYPE	flt_bit_switch;
-	ON_OFF_TYPE	fltt_flcs_solenoid;
-	ON_OFF_TYPE	flt_run_light;
-	ON_OFF_TYPE	flt_fail_light;
-	int	flt_backlight_val;
+	OFF_BACKUP_TYPE flt_digital_switch;
+	EXTEND_NORM_TYPE flt_alt_falps_switch;
+	DISABLE_ENABLE_TYPE flt_tf_flyup_switch;
+	LOCK_AUTO_TYPE flt_le_flaps_switch;
+	OFF_RESET_TYPE flt_flcs_switch;
+	OFF_BIT_TYPE flt_bit_switch;
+	ON_OFF_TYPE fltt_flcs_solenoid;
+	ON_OFF_TYPE flt_run_light;
+	ON_OFF_TYPE flt_fail_light;
+	int flt_backlight_val;
 }F16_FLT_CONTROL_PANEL;
 typedef struct F16_MANUAL_TRIM_PANEL
 {
@@ -583,30 +575,30 @@ typedef struct F16_MANUAL_TRIM_PANEL
 
 typedef struct F16_TEST_SWITCH_PANEL
 {
-	ON_OFF_TYPE	test_fire_oheat_btn;
-	OFF_OXY_OTY_TYPE	test_oxy_oty_switch;
-	ON_OFF_TYPE	test_mal_ind_btn;
-	OFF_PROBE_HEAT_TEST_TYPE	test_probe_heat_switch;
-	OFF_EPU_GEN_TYPE	test_epu_gen_switch;
-	TEST_NORM_MAINT_TYPE	test_test_switch;
+	ON_OFF_TYPE test_fire_oheat_btn;
+	OFF_OXY_OTY_TYPE test_oxy_oty_switch;
+	ON_OFF_TYPE test_mal_ind_btn;
+	OFF_PROBE_HEAT_TEST_TYPE test_probe_heat_switch;
+	OFF_EPU_GEN_TYPE test_epu_gen_switch;
+	TEST_NORM_MAINT_TYPE test_test_switch;
 	//	AFT_FWD_TYPE	test_stick_switch;
-	int	test_pwr_a_light;
-	int	test_pwr_b_light;
-	int	test_pwr_c_light;
-	int	test_pwr_d_light;
-	int	test_backlight_val;
+	int test_pwr_a_light;
+	int test_pwr_b_light;
+	int test_pwr_c_light;
+	int test_pwr_d_light;
+	int test_backlight_val;
 }F16_TEST_SWITCH_PANEL;
 
 typedef struct F16_ENG_JET_START_CONTROL_PANEL
 {
-	OFF_START1_START2_TYPE	ej_jfs_switch;
-	PRI_SEC_TYPE	ej_eng_cont_switch;
-	AB_RESET_NORM_ENG_DATA_TYPE	ej_ane_switch;
-	OFF_MAX_POWER_TYPE	ej_max_power_switch;
-	ON_OFF_TYPE	ej_run_light;
-	ON_OFF_TYPE	ej_reset_solenoid;
-	ON_OFF_TYPE	ej_power_solenoid;
-	int	ej_backlight_val;
+	OFF_START1_START2_TYPE ej_jfs_switch;
+	PRI_SEC_TYPE ej_eng_cont_switch;
+	AB_RESET_NORM_ENG_DATA_TYPE ej_ane_switch;
+	OFF_MAX_POWER_TYPE ej_max_power_switch;
+	ON_OFF_TYPE ej_run_light;
+	ON_OFF_TYPE ej_reset_solenoid;
+	ON_OFF_TYPE ej_power_solenoid;
+	int ej_backlight_val;
 }F16_ENG_JET_START_CONTROL_PANEL;
 
 
@@ -623,8 +615,6 @@ typedef struct F16_AUDIO_2_CONTROL_PANEL
 {
 	ON_OFF_TYPE aud_2_tacan_off_switch;
 	ON_OFF_TYPE aud_2_ils_val_off_switch;
-
-
 	int	aud_2_intercom_val;
 	int	aud_2_tacan_val;
 	int	aud_2_ils_val;
@@ -687,11 +677,11 @@ typedef struct F16_CANOPY_CLOSE_HANDLE
 
 typedef struct F16_THROTTLE
 {
-	ON_OFF_TYPE	throttle_block_switch;
-	VHF_UHF_IN_OUT_TYPE	throttle_comm_switch;
-	UP_DOWN_TYPE	throttle_dog_fight_switch;
-	FORWARD_BACKWARD_TYPE	throttle_speed_break_switch;
-	CURSOR_ENALBLE_TYPE	throttle_cursor_switch;
+	ON_OFF_TYPE throttle_block_switch;
+	VHF_UHF_IN_OUT_TYPE throttle_com_switch;
+	UP_DOWN_TYPE throttle_dog_fight_switch;
+	FORWARD_BACKWARD_TYPE throttle_speed_break_switch;
+	CURSOR_ENALBLE_TYPE throttle_cursor_switch;
 	int throttle_rader_curs_x_val;
 	int throttle_rader_curs_y_val;
 	int throttle_axis_val;
@@ -713,8 +703,6 @@ typedef struct LEFT_CONSOLE_TYPE
 {
 	F16_MANUAL_CANOPY_CONTROL_HANDLE manual_canopy_control_handle;
 	F16_DEFOG_HANDLE defog_handle;
-
-
 	F16_UHF_BACKUP_CONTROL_PANEL	uhf_backup_control_panel;
 	F16_AUDIO_1_CONTROL_PENEL	audio_1_control_penel;
 	//	F16_ASPJ_PANEL	aspj_panel; //패널 삭제
@@ -730,13 +718,11 @@ typedef struct LEFT_CONSOLE_TYPE
 	F16_EPU_CONTROL_PANEL	epu_control_panel;
 	F16_AUDIO_2_CONTROL_PANEL	audio_2_control_panel;
 	F16_ANTI_G_TEST_BUTTON	anti_g_test_button;
-
 	F16_CHAFF_FLARE_DISPENSE_BUTTON	chaff_flare_dispense_button;
 	F16_REDUCED_IDLE_THRUST_SWITCH	reduced_idle_thrust_switch;
 	//	F16_CANOPY_JETTISON_T_HANDLE	canopy_jettison_t_handle;
 	F16_CANOPY_CLOSE_HANDLE	canopy_close_handle;
 	F16_MANUAL_PITCH_OVERRIDE_PANEL	manual_pitch_override_panel;
-
 	F16_THROTTLE	throttle;
 	F16_CONSOLE_FLOOD_LIGHT	console_flood_light;
 }LEFT_CONSOLE_TYPE;
@@ -744,62 +730,62 @@ typedef struct LEFT_CONSOLE_TYPE
 
 typedef struct F16_CAUTION_LIGHT_PANEL
 {
-	int	cau_flcs_fault_light;
-	int	cau_engine_fault_light;
-	int	cau_avion_fault_light;
-	int	cau_seat_not_armed_light;
-	int	cau_elec_sys_light;
-	int	cau_sec_light;
-	int	cau_equip_hot_light;
-	int	cau_nws_fail_light;
-	int	cau_probe_heat_light;
-	int	cau_fuel_oil_hot_light;
-	int	cau_radar_alt_light;
-	int	cau_anti_skid_light;
-	int	cau_cadc_light;
-	int	cau_inlet_icing_light;
-	int	cau_iff_light;
-	int	cau_hook_light;
-	int	cau_store_conf_light;
-	int	cau_overheat_light;
-	int	cau_nuclear_light;
-	int	cau_oxy_low_light;
-	int	cau_aft_not_eng_light;
-	int	cau_eec_light;
-	int	cau_blank_1_light;
-	int	cau_cabin_press_light;
-	int	cau_fwd_fuel_low_light;
-	int	cau_buc_light;
-	int	cau_blank_2_light;
-	int	cau_blank_3_light;
-	int	cau_aft_fuel_low_light;
-	int	cau_blank_4_light;
-	int	cau_blank_5_light;
-	int	cau_blank_6_light;
+	int cau_flcs_fault_light;
+	int cau_engine_fault_light;
+	int cau_avion_fault_light;
+	int cau_seat_not_armed_light;
+	int cau_elec_sys_light;
+	int cau_sec_light;
+	int cau_equip_hot_light;
+	int cau_nws_fail_light;
+	int cau_probe_heat_light;
+	int cau_fuel_oil_hot_light;
+	int cau_radar_alt_light;
+	int cau_anti_skid_light;
+	int cau_cadc_light;
+	int cau_inlet_icing_light;
+	int cau_iff_light;
+	int cau_hook_light;
+	int cau_store_conf_light;
+	int cau_overheat_light;
+	int cau_nuclear_light;
+	int cau_oxy_low_light;
+	int cau_aft_not_eng_light;
+	int cau_eec_light;
+	int cau_blank_1_light;
+	int cau_cabin_press_light;
+	int cau_fwd_fuel_low_light;
+	int cau_buc_light;
+	int cau_blank_2_light;
+	int cau_blank_3_light;
+	int cau_aft_fuel_low_light;
+	int cau_blank_4_light;
+	int cau_blank_5_light;
+	int cau_blank_6_light;
 }F16_CAUTION_LIGHT_PANEL;
 
 
 typedef struct F16_STICK
 {
-	NWS_A_R_DISC_MS_L_STEP_A_G_TOGGLE_A_G_A_A_TYPE	stick_nws_btn;
-	FWD_AFT_LEFT_RIGHT_TYPE	stick_trim_switch;
-	ON_OFF_TYPE	stick_weapon_release_btn;
-	RWS_SAM_TWS_ACM_ACM_boresight_A2G_TYPE	stick_tm_fwd_btn;
-	STT_TTS_SAM_TWS_SMT_with_no_bug_ACM_TYPE	stick_tm_aft_btn;
-	GRATER_THAN_0_5_SECOND_TGP_EO_HSD_WITH_DATALINK_TYPE	stick_tm_left_btn;
-	_1_SECOND_NO_BUG_1_SECOND_BUGGED_TARGET_IRWS_GREATER_ITWS_SMT_ACM_A2G_TYPE	stick_tm_right_btn;
-	FWD_AFT_LEFT_RIGHT_TYPE	stick_dm_switch;
-	FWD_AFT_LEFT_RIGHT_TYPE	stick_cm_switch;
-	ON_OFF_TYPE	stick_pinky_btn;
-	ON_OFF_TYPE	stick_paddle_btn;
-	_1_DETENT_2_DETENT_TYPE	stick_trigger_switch;
+	NWS_A_R_DISC_MS_L_STEP_A_G_TOGGLE_A_G_A_A_TYPE stick_nws_btn;
+	FWD_AFT_LEFT_RIGHT_TYPE stick_trim_switch;
+	ON_OFF_TYPE stick_weapon_release_btn;
+	RWS_SAM_TWS_ACM_ACM_boresight_A2G_TYPE stick_tm_fwd_btn;
+	STT_TTS_SAM_TWS_SMT_with_no_bug_ACM_TYPE stick_tm_aft_btn;
+	GRATER_THAN_0_5_SECOND_TGP_EO_HSD_WITH_DATALINK_TYPE stick_tm_left_btn;
+	_1_SECOND_NO_BUG_1_SECOND_BUGGED_TARGET_IRWS_GREATER_ITWS_SMT_ACM_A2G_TYPE stick_tm_right_btn;
+	FWD_AFT_LEFT_RIGHT_TYPE stick_dm_switch;
+	FWD_AFT_LEFT_RIGHT_TYPE stick_cm_switch;
+	ON_OFF_TYPE stick_pinky_btn;
+	ON_OFF_TYPE stick_paddle_btn;
+	_1_DETENT_2_DETENT_TYPE stick_trigger_switch;
 }F16_STICK;
 
 
 typedef struct F16_EPU_FUEL_QUANTITY_INDICATOR
 {
-	int	epu_fuel_quantity_val;
-	int	epu_fuel_backlight_val;
+	int epu_fuel_quantity_val;
+	int epu_fuel_backlight_val;
 }F16_EPU_FUEL_QUANTITY_INDICATOR;
 
 
@@ -832,10 +818,10 @@ typedef struct F16_CLOCK
 	int	clock_knob_small;
 }F16_CLOCK;
 
-typedef struct F16_MAGNETIC_COMPASS
-{
-	int	mag_compass_type;
-}F16_MAGNETIC_COMPASS;
+//typedef struct F16_MAGNETIC_COMPASS
+//{
+//	int	mag_compass_type;
+//}F16_MAGNETIC_COMPASS;
 
 typedef struct F16_FUEL_QUANTITY_INDICATOR
 {
@@ -859,7 +845,7 @@ typedef struct RIGHT_AUX_CONSOLE_TYPE
 	F16_SYSTEM_B_HYD_PRESS_INDICATOR	system_b_hyd_press_indicator;
 	F16_HYD_PRESS_LIGHTING_PANEL	hyd_press_lighting_panel;
 	F16_CLOCK	clock;
-	F16_MAGNETIC_COMPASS	magnetic_compass;
+	//F16_MAGNETIC_COMPASS	magnetic_compass; //패널 삭제 
 	F16_FUEL_QUANTITY_INDICATOR	fuel_quantity_indicator;
 	//F16_COCKPIT_PRESSURE_ALTIMETER	cockpit_pressure_altimeter; 영상계기 HDMI 협의 필요한듯.
 	F16_PILOT_FAULT_LIST_DISPLAY	pilot_fault_list_display;
@@ -915,15 +901,18 @@ typedef struct AVIONICS_POWER_PANEL {
 
 typedef struct F16_AVIONICS_POWER_PANEL
 {
-	OFF_FCC_TYPE	avion_fcc_switch;
-	OFF_SMS_TYPE	avion_sms_switch;
-	OFF_MFD_TYPE	avion_mfd_switch;
-	OFF_UFC_TYPE	avion_ufc_switch;
-	OFF_STOR_HDG_NORM_NAV_CAL_IN_FLT_ATT_TYPE	avion_ins_switch;
-	OFF_GPS_TYPE	avion_gps_switch;
-	OFF_DL_TYPE	avion_dl_switch;
-	OFF_MAP_TYPE	avion_map_switch;
-	int	avion_backlight_val;
+
+	OFF_MMC_TYPE avion_mmc_switch;
+	OFF_STA_TYPE avion_sta_switch;
+	OFF_MFD_TYPE avion_mfd_switch;
+	OFF_UFC_TYPE avion_ufc_switch;
+	OFF_STOR_HDG_NORM_NAV_CAL_IN_FLT_ATT_TYPE avion_egi_switch;
+	ZERO_OFF_ON_TYPE avion_mids_switch;
+	OFF_GES_TYPE avion_ges_switch;
+	OFF_DL_TYPE avion_dl_switch;
+	OFF_CPD_TYPE avion_cpd_switch;
+	int avion_backlight_val;
+
 }F16_AVIONICS_POWER_PANEL;
 
 typedef struct F16_OXYGEN_PANEL
@@ -1018,8 +1007,11 @@ typedef struct F_16_COCKPIT_TO_HOST_TYPE
 	LEFT_AUX_CONSOLE_TYPE	f16_left_aux_console_type;
 	LEFT_CONSOLE_TYPE	f16_left_console_type;
 	RIGHT_AUX_CONSOLE_TYPE	f16_right_aux_console_type;
-	RIGHT_CONSOLE_TYPE	f16_right__console_type;
+	RIGHT_CONSOLE_TYPE	f16_right_console_type;
 }F_16_COCKPIT_TO_HOST_TYPE;
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
